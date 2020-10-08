@@ -11,7 +11,7 @@ bin/{{ cookiecutter.project_slug }}: $(shell find ./ -name '*.go')
 	go build -o bin/{{ cookiecutter.project_slug }} main.go
 
 
-zip: info.plist Makefile {{ cookiecutter.project_slug }} bin/{{ cookiecutter.project_slug }}
+zip: info.plist Makefile {{ cookiecutter.project_slug }}.sh bin/{{ cookiecutter.project_slug }}
 	zip -r $(IMAGE).alfredworkflow $^
 
 clean:

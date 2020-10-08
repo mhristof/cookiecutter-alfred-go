@@ -3,92 +3,14 @@
 <plist version="1.0">
 <dict>
 	<key>bundleid</key>
-    <string>{{ cookiecutter.project_slug }}</string>
+	<string>{{cookiecutter.project_slug}}</string>
 	<key>connections</key>
 	<dict>
-		<key>21D1782C-378B-4E9C-9818-091C8A8CA92B</key>
-		<array>
-			<dict>
-				<key>destinationuid</key>
-				<string>B654BF28-5003-4421-93E9-28B6BE598619</string>
-				<key>modifiers</key>
-				<integer>0</integer>
-				<key>modifiersubtext</key>
-				<string></string>
-				<key>vitoclose</key>
-				<false/>
-			</dict>
-		</array>
-		<key>249B0192-A163-46F9-A1A4-F8680F1415CF</key>
-		<array>
-			<dict>
-				<key>destinationuid</key>
-				<string>0592109D-E890-48B0-9E64-6DFFB095F30A</string>
-				<key>modifiers</key>
-				<integer>0</integer>
-				<key>modifiersubtext</key>
-				<string></string>
-				<key>vitoclose</key>
-				<false/>
-			</dict>
-		</array>
-		<key>59520B3E-2A74-453D-BDF6-7A887F537799</key>
-		<array>
-			<dict>
-				<key>destinationuid</key>
-				<string>EDFBCE9A-7A0E-423E-A1B7-EFEEB707FD9F</string>
-				<key>modifiers</key>
-				<integer>0</integer>
-				<key>modifiersubtext</key>
-				<string></string>
-				<key>vitoclose</key>
-				<false/>
-			</dict>
-		</array>
 		<key>9A4E0276-BFF2-4386-9699-AB65E494C7B8</key>
 		<array>
 			<dict>
 				<key>destinationuid</key>
-				<string>59520B3E-2A74-453D-BDF6-7A887F537799</string>
-				<key>modifiers</key>
-				<integer>0</integer>
-				<key>modifiersubtext</key>
-				<string></string>
-				<key>vitoclose</key>
-				<false/>
-			</dict>
-		</array>
-		<key>B654BF28-5003-4421-93E9-28B6BE598619</key>
-		<array>
-			<dict>
-				<key>destinationuid</key>
-				<string>249B0192-A163-46F9-A1A4-F8680F1415CF</string>
-				<key>modifiers</key>
-				<integer>0</integer>
-				<key>modifiersubtext</key>
-				<string></string>
-				<key>vitoclose</key>
-				<false/>
-			</dict>
-		</array>
-		<key>EA2A023E-D4B2-48C4-8D56-FD67E39897BB</key>
-		<array>
-			<dict>
-				<key>destinationuid</key>
-				<string>21D1782C-378B-4E9C-9818-091C8A8CA92B</string>
-				<key>modifiers</key>
-				<integer>0</integer>
-				<key>modifiersubtext</key>
-				<string></string>
-				<key>vitoclose</key>
-				<false/>
-			</dict>
-		</array>
-		<key>EDFBCE9A-7A0E-423E-A1B7-EFEEB707FD9F</key>
-		<array>
-			<dict>
-				<key>destinationuid</key>
-				<string>EA2A023E-D4B2-48C4-8D56-FD67E39897BB</string>
+				<string>EB255A05-9CF1-46F0-8497-AE67F8D848A2</string>
 				<key>modifiers</key>
 				<integer>0</integer>
 				<key>modifiersubtext</key>
@@ -99,13 +21,13 @@
 		</array>
 	</dict>
 	<key>createdby</key>
-	<string>Mike Christof</string>
+    <string>{{cookiecutter.full_name}}</string>
 	<key>description</key>
     <string>{{cookiecutter.project_short_description}}</string>
 	<key>disabled</key>
 	<false/>
 	<key>name</key>
-	<string>{{ cookiecutter.project_slug }}</string>
+    <string>{{cookiecutter.project_slug}}</string>
 	<key>objects</key>
 	<array>
 		<dict>
@@ -124,7 +46,7 @@
 				<key>escaping</key>
 				<integer>102</integer>
 				<key>keyword</key>
-                <string>{{ cookiecutter.project_slug }}</string>
+				<string>{{ cookiecutter.project_slug.lower().replace('alfred-', '') }}</string>
 				<key>queuedelaycustom</key>
 				<integer>3</integer>
 				<key>queuedelayimmediatelyinitially</key>
@@ -136,7 +58,7 @@
 				<key>runningsubtext</key>
 				<string></string>
 				<key>script</key>
-				<string>./{{ cookiecutter.project_slug }}.sh alfred</string>
+                <string>./{{cookiecutter.project_slug}}.sh alfred</string>
 				<key>scriptargtype</key>
 				<integer>1</integer>
 				<key>scriptfile</key>
@@ -160,98 +82,12 @@
 		<dict>
 			<key>config</key>
 			<dict>
-				<key>argumenttype</key>
-				<integer>0</integer>
-				<key>keyword</key>
-				<string>0cd829b2-77b0-4243-aff5-f4e1dec00137</string>
-				<key>subtext</key>
-				<string></string>
-				<key>text</key>
-				<string>TODO</string>
-				<key>withspace</key>
-				<true/>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.input.keyword</string>
-			<key>uid</key>
-			<string>EDFBCE9A-7A0E-423E-A1B7-EFEEB707FD9F</string>
-			<key>version</key>
-			<integer>1</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>argument</key>
-				<string></string>
-				<key>passthroughargument</key>
-				<false/>
-				<key>variables</key>
-				<dict>
-					<key>image</key>
-					<string>{query}</string>
-				</dict>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.utility.argument</string>
-			<key>uid</key>
-			<string>59520B3E-2A74-453D-BDF6-7A887F537799</string>
-			<key>version</key>
-			<integer>1</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>argument</key>
-				<string>{query}</string>
-				<key>passthroughargument</key>
-				<false/>
-				<key>variables</key>
-				<dict>
-					<key>text</key>
-					<string>--text "{query}"</string>
-				</dict>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.utility.argument</string>
-			<key>uid</key>
-			<string>EA2A023E-D4B2-48C4-8D56-FD67E39897BB</string>
-			<key>version</key>
-			<integer>1</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>concurrently</key>
-				<false/>
-				<key>escaping</key>
-				<integer>68</integer>
-				<key>script</key>
-				<string>#!/usr/bin/env bash
-
-osascript -e 'set the clipboard to (read (POSIX file "{query}") as JPEG picture)'</string>
-				<key>scriptargtype</key>
-				<integer>0</integer>
-				<key>scriptfile</key>
-				<string></string>
-				<key>type</key>
-				<integer>0</integer>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.action.script</string>
-			<key>uid</key>
-			<string>249B0192-A163-46F9-A1A4-F8680F1415CF</string>
-			<key>version</key>
-			<integer>2</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
 				<key>concurrently</key>
 				<false/>
 				<key>escaping</key>
 				<integer>102</integer>
 				<key>script</key>
-				<string>./bin/{{ cookiecutter.project_slug }} TODO</string>
+                <string>./{{cookiecutter.project_slug}}.sh {query}</string>
 				<key>scriptargtype</key>
 				<integer>0</integer>
 				<key>scriptfile</key>
@@ -262,104 +98,28 @@ osascript -e 'set the clipboard to (read (POSIX file "{query}") as JPEG picture)
 			<key>type</key>
 			<string>alfred.workflow.action.script</string>
 			<key>uid</key>
-			<string>21D1782C-378B-4E9C-9818-091C8A8CA92B</string>
+			<string>EB255A05-9CF1-46F0-8497-AE67F8D848A2</string>
 			<key>version</key>
 			<integer>2</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>lastpathcomponent</key>
-				<false/>
-				<key>onlyshowifquerypopulated</key>
-				<false/>
-				<key>removeextension</key>
-				<false/>
-				<key>text</key>
-				<string>{var:text}</string>
-				<key>title</key>
-				<string>TODO</string>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.output.notification</string>
-			<key>uid</key>
-			<string>0592109D-E890-48B0-9E64-6DFFB095F30A</string>
-			<key>version</key>
-			<integer>1</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>type</key>
-				<integer>0</integer>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.utility.transform</string>
-			<key>uid</key>
-			<string>B654BF28-5003-4421-93E9-28B6BE598619</string>
-			<key>version</key>
-			<integer>1</integer>
 		</dict>
 	</array>
 	<key>readme</key>
 	<string></string>
 	<key>uidata</key>
 	<dict>
-		<key>0592109D-E890-48B0-9E64-6DFFB095F30A</key>
-		<dict>
-			<key>xpos</key>
-			<integer>550</integer>
-			<key>ypos</key>
-			<integer>295</integer>
-		</dict>
-		<key>21D1782C-378B-4E9C-9818-091C8A8CA92B</key>
-		<dict>
-			<key>xpos</key>
-			<integer>50</integer>
-			<key>ypos</key>
-			<integer>295</integer>
-		</dict>
-		<key>249B0192-A163-46F9-A1A4-F8680F1415CF</key>
-		<dict>
-			<key>xpos</key>
-			<integer>345</integer>
-			<key>ypos</key>
-			<integer>295</integer>
-		</dict>
-		<key>59520B3E-2A74-453D-BDF6-7A887F537799</key>
-		<dict>
-			<key>xpos</key>
-			<integer>190</integer>
-			<key>ypos</key>
-			<integer>160</integer>
-		</dict>
 		<key>9A4E0276-BFF2-4386-9699-AB65E494C7B8</key>
 		<dict>
 			<key>xpos</key>
-			<integer>10</integer>
+			<integer>125</integer>
 			<key>ypos</key>
-			<integer>130</integer>
+			<integer>235</integer>
 		</dict>
-		<key>B654BF28-5003-4421-93E9-28B6BE598619</key>
+		<key>EB255A05-9CF1-46F0-8497-AE67F8D848A2</key>
 		<dict>
 			<key>xpos</key>
-			<integer>225</integer>
+			<integer>335</integer>
 			<key>ypos</key>
-			<integer>325</integer>
-		</dict>
-		<key>EA2A023E-D4B2-48C4-8D56-FD67E39897BB</key>
-		<dict>
-			<key>xpos</key>
-			<integer>465</integer>
-			<key>ypos</key>
-			<integer>160</integer>
-		</dict>
-		<key>EDFBCE9A-7A0E-423E-A1B7-EFEEB707FD9F</key>
-		<dict>
-			<key>xpos</key>
-			<integer>275</integer>
-			<key>ypos</key>
-			<integer>130</integer>
+			<integer>235</integer>
 		</dict>
 	</dict>
 	<key>variables</key>
@@ -370,8 +130,8 @@ osascript -e 'set the clipboard to (read (POSIX file "{query}") as JPEG picture)
 	<key>variablesdontexport</key>
 	<array/>
 	<key>version</key>
-    <string>{{cookiecutter.version}}</string>
+	<string>{{cookiecutter.version}}</string>
 	<key>webaddress</key>
-    <string>https://github.com/{{cookiecutter.github_username}}/{{cookiecutter.project_slug}}</string>
+	<string>https://github.com/{{cookiecutter.github_username}}/{{cookiecutter.project_slug}}</string>
 </dict>
 </plist>
