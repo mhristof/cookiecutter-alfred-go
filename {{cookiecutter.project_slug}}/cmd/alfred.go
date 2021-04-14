@@ -13,6 +13,10 @@ var (
 		Short: "List alfred options",
 		Run: func(cmd *cobra.Command, args []string) {
 			var opts alfred.ScriptFilter
+			if command.Use == "alfred" || command.Use == "help [command]" {
+				continue
+			}
+			//_ = opts.Add(command.Use, command.Use)
 			//item := opts.Add(path, path)
 			opts.Print()
 		},
